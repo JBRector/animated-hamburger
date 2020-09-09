@@ -1,9 +1,8 @@
-// require jquery
-var $hb = $('.js-mobile-trigger');
+var $hb = document.querySelector('.js-mobile-trigger');
 
-$hb.on('click', function() {
-  if ($hb.hasClass('open')) {
-    $hb.removeClass('open');
+$hb.addEventListener('click', () => {
+  if ($hb.classList.includes('open')) {
+    $hb.classList.remove('open');
   } else {
     $hb.addClass('open');
   }
