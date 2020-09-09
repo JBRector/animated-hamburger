@@ -4,6 +4,6 @@ $hb.addEventListener('click', () => {
   if ($hb.classList.includes('open')) {
     $hb.classList.remove('open');
   } else {
-    $hb.addClass('open');
+    $hb.classList.add('open');
   }
 });
